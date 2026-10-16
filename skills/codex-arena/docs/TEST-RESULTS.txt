@@ -1,0 +1,39 @@
+test_audit_then_run_reuses_findings (test_arena.ArenaTests.test_audit_then_run_reuses_findings) ... ok
+test_budget_stops_before_dispatch (test_arena.ArenaTests.test_budget_stops_before_dispatch) ... ok
+test_dirty_repository_is_rejected_before_any_calls (test_arena.ArenaTests.test_dirty_repository_is_rejected_before_any_calls) ... ok
+test_failed_checks_prevent_winner (test_arena.ArenaTests.test_failed_checks_prevent_winner) ... ok
+test_final_blocker_prevents_ready (test_arena.ArenaTests.test_final_blocker_prevents_ready) ... ok
+test_full_32_tournament_preserves_main_and_resume_does_not_repeat (test_arena.ArenaTests.test_full_32_tournament_preserves_main_and_resume_does_not_repeat) ... ok
+test_malformed_output_never_enters_bracket (test_arena.ArenaTests.test_malformed_output_never_enters_bracket) ... ok
+test_missing_checks_prevents_editing (test_arena.ArenaTests.test_missing_checks_prevents_editing) ... ok
+test_unknown_usage_pauses_and_is_not_repeated (test_arena.ArenaTests.test_unknown_usage_pauses_and_is_not_repeated) ... ok
+test_check_timeout_kills_process (test_arena.CoreTests.test_check_timeout_kills_process) ... ok
+test_gate_requires_pass_and_protects_checks (test_arena.CoreTests.test_gate_requires_pass_and_protects_checks) ... ok
+test_schema_rejects_extra_fields_and_wrong_types (test_arena.CoreTests.test_schema_rejects_extra_fields_and_wrong_types) ... ok
+test_state_lock_and_artifact_recovery (test_arena.CoreTests.test_state_lock_and_artifact_recovery) ... ok
+test_additional_tests_are_allowed_but_existing_tests_are_protected (test_arena.RecoveryTests.test_additional_tests_are_allowed_but_existing_tests_are_protected) ... ok
+test_budget_pause_does_not_create_an_unstarted_unknown_attempt (test_arena.RecoveryTests.test_budget_pause_does_not_create_an_unstarted_unknown_attempt) ... ok
+test_cancellation_stops_a_long_running_command (test_arena.RecoveryTests.test_cancellation_stops_a_long_running_command) ... ok
+test_candidate_drift_blocks_resume_without_any_calls (test_arena.RecoveryTests.test_candidate_drift_blocks_resume_without_any_calls) ... ok
+test_check_stage_is_bound_to_the_actual_revision (test_arena.RecoveryTests.test_check_stage_is_bound_to_the_actual_revision) ... ok
+test_cli_plan_has_no_side_effects (test_arena.RecoveryTests.test_cli_plan_has_no_side_effects) ... ok
+test_completed_envelope_is_recovered_after_ledger_interruption (test_arena.RecoveryTests.test_completed_envelope_is_recovered_after_ledger_interruption) ... ok
+test_crash_after_commit_is_recovered_without_repeating_editor (test_arena.RecoveryTests.test_crash_after_commit_is_recovered_without_repeating_editor) ... ok
+test_cross_review_findings_survive_elimination (test_arena.RecoveryTests.test_cross_review_findings_survive_elimination) ... ok
+test_explicit_usage_reconciliation_unblocks_next_stage (test_arena.RecoveryTests.test_explicit_usage_reconciliation_unblocks_next_stage) ... ok
+test_exported_diff_is_an_applicable_patch_with_blank_context (test_arena.RecoveryTests.test_exported_diff_is_an_applicable_patch_with_blank_context) ... ok
+test_failed_readonly_call_has_unknown_usage_and_requires_reconciliation (test_arena.RecoveryTests.test_failed_readonly_call_has_unknown_usage_and_requires_reconciliation) ... ok
+test_incomplete_attempt_remains_unknown_in_usage (test_arena.RecoveryTests.test_incomplete_attempt_remains_unknown_in_usage) ... ok
+test_interrupted_editor_retry_preserves_backup_and_completes (test_arena.RecoveryTests.test_interrupted_editor_retry_preserves_backup_and_completes) ... ok
+test_known_failed_response_is_not_imported_as_success (test_arena.RecoveryTests.test_known_failed_response_is_not_imported_as_success) ... ok
+test_live_worker_cannot_be_retried (test_arena.RecoveryTests.test_live_worker_cannot_be_retried) ... ok
+test_mutating_checks_do_not_leave_reusable_pass_records (test_arena.RecoveryTests.test_mutating_checks_do_not_leave_reusable_pass_records) ... ok
+test_new_run_required_for_changed_configuration (test_arena.RecoveryTests.test_new_run_required_for_changed_configuration) ... ok
+test_recovered_judge_must_still_score_both_sides (test_arena.RecoveryTests.test_recovered_judge_must_still_score_both_sides) ... ok
+test_required_check_failure_is_recorded_with_evidence (test_arena.RecoveryTests.test_required_check_failure_is_recorded_with_evidence) ... ok
+test_test_runner_configuration_changes_cannot_win (test_arena.RecoveryTests.test_test_runner_configuration_changes_cannot_win) ... ok
+
+----------------------------------------------------------------------
+Ran 34 tests in 73.139s
+
+OK

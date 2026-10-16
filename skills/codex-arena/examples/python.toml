@@ -1,0 +1,29 @@
+# Copy outside the target checkout, select a model your installed CLI accepts,
+# and replace verification commands to match the project before running.
+model = "gpt-6.1-sol"
+codex_bin = "codex"
+concurrency = 2
+job_timeout = 1800
+wall_seconds = 16200
+job_reserve_tokens = 100000
+soft_tokens = 15000000
+emergency_tokens = 17000000
+max_attempts = 2
+
+[[checks]]
+name = "tests"
+argv = ["python3", "-m", "unittest", "discover", "-s", "tests", "-v"]
+required = true
+timeout = 300
+
+[[checks]]
+name = "lint"
+argv = ["ruff", "check", "."]
+required = true
+timeout = 120
+
+[[checks]]
+name = "typecheck"
+argv = ["mypy", "src"]
+required = true
+timeout = 180

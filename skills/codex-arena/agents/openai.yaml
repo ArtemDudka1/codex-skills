@@ -1,0 +1,4 @@
+interface:
+  display_name: "Codex Arena"
+  short_description: "Глубокий аудит и улучшение проекта через турнир агентов"
+  default_prompt: "Используй $codex-arena для глубокого аудита и улучшения текущего проекта в отдельных ветках с проверками и итоговым diff."

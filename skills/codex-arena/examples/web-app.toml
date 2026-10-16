@@ -1,0 +1,45 @@
+# Template for an npm project with these scripts already defined.
+# All commands run in each dedicated worktree. Setup must preserve lockfiles.
+model = "gpt-6.1-sol"
+concurrency = 2
+job_timeout = 1800
+soft_tokens = 15000000
+emergency_tokens = 17000000
+# Protect every custom verification dependency in addition to built-in patterns.
+protected_paths = ["tests/*", "e2e/*", "scripts/*", "package.json", "package-lock.json", "playwright.config.*", "tsconfig*", "eslint*"]
+
+[[setup]]
+argv = ["npm", "ci"]
+timeout = 600
+
+[[checks]]
+name = "tests"
+argv = ["npm", "test", "--", "--run"]
+required = true
+timeout = 300
+
+[[checks]]
+name = "lint"
+argv = ["npm", "run", "lint"]
+required = true
+timeout = 120
+
+[[checks]]
+name = "typecheck"
+argv = ["npm", "run", "typecheck"]
+required = true
+timeout = 180
+
+[[checks]]
+name = "build"
+argv = ["npm", "run", "build"]
+required = true
+timeout = 300
+
+[[checks]]
+name = "browser"
+# This script must start a local server on a FREE port, test it and exit.
+# The process group (including any remaining server) is killed on completion.
+argv = ["npm", "run", "test:e2e"]
+required = true
+timeout = 300
