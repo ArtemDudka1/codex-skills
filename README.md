@@ -52,3 +52,18 @@ python3 skills/codex-arena/bin/codex-arena plan /path/to/project --agents 32
 Каждый новый скилл размещается отдельной папкой `skills/<name>/` с `SKILL.md`
 и необходимыми ресурсами. Личные токены, состояния прогонов, проектные данные,
 worktrees и файлы авторизации сюда не добавляются.
+
+## Reels Team
+
+[Skill](skills/reels-team/SKILL.md) · [Team rules](skills/reels-team/AGENTS.md) · [Quality criteria](skills/reels-team/quality/criteria.md)
+
+A coordinator delegates to a designer, scriptwriter, code-based editor, sound director and independent reviewer. Includes frozen acceptance criteria and bounded repair cycles. Documentation and handoffs are English; all user-facing chat is Russian. Internal reasoning may use English without being disclosed.
+
+Install from a persistent clone:
+
+```sh
+mkdir -p ~/.agents/skills
+ln -s "$(pwd)/skills/reels-team" ~/.agents/skills/reels-team
+```
+
+Inspect an existing destination before installation; never overwrite it blindly. Open a new Codex chat if skill discovery needs refreshing. Invoke `$reels-team` with a topic, available assets and desired duration. The host must provide delegation and appropriate media tools; files alone do not start agents. This package has not yet completed an end-to-end Reel production pilot.
